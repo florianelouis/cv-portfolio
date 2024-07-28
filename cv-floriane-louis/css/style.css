@@ -1,0 +1,443 @@
+/**** Reglages généraux **************/
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color:rgba(191, 211, 248, 0.5);
+}
+
+main {
+    margin: -20px 1% 0 1%;
+}
+
+/*****En tête ***********************/
+header {
+    height:6rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(98, 124, 203, 0.9);
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 2;
+}
+
+/***** Titres ***********************/
+h1 {
+    font-family: 'MuseoModerno', sans-serif;
+    text-align: center;
+    align-items: center;
+    font-weight: lighter;
+    width: 20%;
+}
+
+h2 {
+    font-family: 'MuseoModerno', sans-serif;
+    padding-top: 100px;
+}
+
+.centre {
+    text-align: center;
+    width: 100%;
+}
+
+/****************Menu *****************/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul {
+    font-family: 'MuseoModerno', sans-serif;
+    list-style-type: none;
+    font-size: 1.8rem;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 70%;
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+nav a:hover {
+    color:white;
+}
+
+/************ Séparation visuelle des parties *****************/
+hr {
+    height: 5px;
+    background-color: #8AAEE0;
+    border: none;
+}
+
+/************ Présentation *****************/
+.texteEtPhoto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textePresentation {
+    width: 70%;
+}
+
+.floriane img {
+    width: 20rem;
+    height: 20rem;
+    background-color: #B1C9EF;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.presentation img {
+    width: 50px;
+}
+
+/************ Atouts *****************/
+
+.pointsFortsEtFaibles {
+    background-image: url(../images/fond-texte.webp);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 3% 0;
+}
+
+.blanc {
+    color:white;
+}
+.pointsForts {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 40%;
+    margin : 10px 0 10px 0;
+}
+
+.pointsFaibles {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 1rem;
+    margin : 10px 0 10px 0;
+    width: 30%;
+}
+
+.parcoursEtExperiencesPro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.parcours {
+    width: 45%;
+}
+
+.titreColore {
+    font-family: 'MuseoModerno', sans-serif;
+    font-size: 1.75rem;
+    margin: 1rem 0;
+    background-image: repeating-linear-gradient(to bottom, rgb(57, 88, 134), rgb(98, 142, 203)80%, rgb(138, 174, 224)100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.vertical-text {
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+}
+
+.passe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.passe h4 {
+    text-align: center;
+    width:10%;
+}
+
+.passe ul {
+    width: 80%;
+}
+
+.futur {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.futur h4 {
+    text-align: center;
+    width:10%;
+}
+
+.futur p {
+    width: 80%;
+}
+
+.experiencesPro {
+    width: 45%;
+}
+
+/************ Galerie *****************/
+figure {
+    width: calc(20% - (80px / 5));
+    box-sizing: border-box;
+}
+
+.galerie {
+    padding: 0px 20px 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type:none;
+    row-gap:20px;
+}
+
+.photo {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.photo li {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.photo img {
+    border-radius: 6% 6% 6% 6%;
+    display:block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo a {
+    width: 15%;
+    height: 15%;
+}
+
+.transition {
+    transition: 1s;
+}
+
+.mask-circle {
+    clip-path: circle(35%);
+}
+
+.mask-circle:hover {
+    clip-path: circle(70%);
+}
+
+.filter {
+    filter:grayscale(1);
+}
+
+.filter:hover {
+    filter: none;
+}
+
+
+/************ Contact *****************/
+.formulaireEtCoordonnees {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.formulaire {
+    width: 40rem;
+}
+
+input {
+    background-color: #8AAEE0;
+    margin-top: 0.5rem;
+    border-radius: 7px;
+    color:white;
+}
+
+form input {
+    width: 100%;
+    border-style: none;
+}
+
+form textarea {
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 0.5rem;
+    border-style: none;
+}
+    
+form div{
+    margin-bottom: 1rem;
+}
+
+.button {
+    text-align: center;
+}
+.button i{
+    color:#628ECB;
+}
+
+.coordonnees a {
+    color:#628ECB;
+}
+
+.coordonnees {
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+}
+
+.coordonnees::after {
+    content: url(../images/scotch.webp);
+    position: absolute;
+    left: 250px;
+    bottom: 250px;
+    opacity: 0.5;
+    transform: rotate(45deg);
+}
+
+.fa-solid {
+    margin: 0.5rem;
+}
+
+.fa-brands {
+    margin: 0.5rem;
+}
+
+/* mise en forme du bouton valider  */
+input[type=submit] {
+    color: #8AAEE0;
+    background-color: white;
+    border-radius: 7px;
+    border:none;
+    height: 40px;
+    width: 100px;
+    font-size: 1.25rem;
+}
+
+input[type=submit]:hover {
+    background-color: #8AAEE0;
+    color: white;
+    box-shadow: 0 0 0 5px rgba(177, 201, 239, 0.7);
+}
+
+
+
+/************ Footer *****************/
+footer {
+    text-align: center;
+    background-color: #628ECB;
+    color: white;
+}
+
+/************ Spécifique page 2 *****************/
+.navigationProjets {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.precedent {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width : 40%;
+}
+
+.precedent p {
+    width: 80%;
+    text-align: left;
+}
+
+.precedent i {
+    width: 5%;
+}
+
+.suivant {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.suivant p {
+    width: 80%;
+    text-align: right;
+}
+
+.suivant i {
+    width: 5%;
+}
+
+.pageGalerie {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.image-projet {
+    height: 20rem;
+}
+
+.box-image {
+    width:100%;
+    text-align: center;
+}
+.details {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.image-complementaire {
+    height: 15rem;
+}
